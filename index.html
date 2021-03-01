@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASA Satellite</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style type="text/css">
+        #main_div{
+            position: absolute;
+            background-color: aliceblue;
+            width: 100%;
+            padding: 40px;
+        }
+        #para{
+            left: 300px!important;
+            position: absolute;
+            margin: auto;
+        }
+        #btn_get_images{
+            position: absolute;
+            left: 700px;
+            padding: 7px;
+            top: 29px;
+            font-family: monospace;
+            cursor : pointer;
+        }
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        #image_div img {
+            max-height: 400px;
+            max-width: 500px;
+            min-height: 200px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main_div">
+        <p id="para">Date: <input type="text" id="datepicker" placeholder="Enter Date"></p>
+        <button id="btn_get_images" type="submit">Get Images</button>
+    </div>
+    <div id="image_div" class="flex-center">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
